@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/background_color"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="255dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/wifidevice"/>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:drawablePadding="5dp"
+            android:text="Cihazınızı internete bağlamak için SSID ve Parola giriniz."
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="195dp" />
+
+        <EditText
+            android:id="@+id/ssid"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:drawablePadding="5dp"
+            android:elevation="20dp"
+            android:ems="10"
+            android:drawableStart="@drawable/wifi_icon"
+            android:background="@drawable/custom_input"
+            android:hint="SSID"
+            android:inputType="textPersonName"
+            android:paddingStart="5dp"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <EditText
+            android:id="@+id/parola"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="5dp"
+            android:elevation="20dp"
+            android:ems="10"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/lock_icon"
+            android:hint="Parola"
+            android:inputType="textPassword"
+            android:paddingStart="5dp"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="343dp" />
+
+
+        <Button
+            android:id="@+id/devamEt"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/orange"
+            android:elevation="20dp"
+            android:text="Devam Et"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

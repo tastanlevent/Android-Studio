@@ -1,0 +1,21 @@
+*.iml
+.gradle
+/local.properties
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+**/target/
+/target/
+*/target/*
+.classpath
+.project
+.settings
+# Package Files #
+*.jar
+*.war
+*.ear
+*.iml
+*.idea
